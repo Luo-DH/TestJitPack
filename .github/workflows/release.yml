@@ -10,7 +10,10 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Get version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.event.release.tag_name }}
+          tag: ${{ steps/get_version.outputs.VERSION }}
           generateReleaseNotes: true
