@@ -42,6 +42,11 @@ jobs:
           file_glob: true
           body: ""
 
+      - uses: ncipollo/release-action@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          generateReleaseNotes: true
+
   release:
     runs-on: ubuntu-latest
     permissions:
