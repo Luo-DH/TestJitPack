@@ -11,8 +11,8 @@ android {
         applicationId = "com.easy.testjitpack"
         minSdk = 24
         targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,4 +46,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 //    implementation("com.github.Luo-DH:mylib:0.1")
+//    com.github.Luo-DH:TestJitpack:Tag 7e749aef69
+
+    implementation("com.github.Luo-DH:TestJitpack:7e749aef69")
 }
