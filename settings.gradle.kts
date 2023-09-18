@@ -16,5 +16,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "TestJitPack"
-include(":app")
 include(":mylibrary")
