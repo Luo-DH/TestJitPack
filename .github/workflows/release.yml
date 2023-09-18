@@ -57,5 +57,5 @@ jobs:
 #        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.ref_name }}
+          tag: ${{ github.ref }}
           generateReleaseNotes: true
